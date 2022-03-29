@@ -13,46 +13,68 @@
     <!-- <link rel="stylesheet" href="san.css"> -->
     <style>
         
-body{
+        body{
     padding: 0;
     margin:0;
     max-width: 100%;
     overflow-x: hidden;
 }
-.heading{
-    width:100%;
-    text-align: center;
+.heading-design{
+    background-color:#2F3D46;
+    color:#E3E8EB;
+    height: 75px;
+    
+
+
 }
-.body{
-    display: flex;
-    flex-direction: row;
-    border:1px solid black;
-    margin:20px
+.fa-3x{
+    margin-left: 20px;
 }
-.body-content{
-    margin: 20px;
-    padding: 20px;
-    border:1px solid black;
-    margin-left:70px
+.an{
+    justify-content: center;
 }
-.main{
-    display:flex;
-    justify-content: flex-end;
-    width: 50%;
-    margin:20px
+.row{
+    background-color: #CAD2C5;
+    padding-top: 40px;
+    
 }
-label{
-    display:inline-block;
-     text-align: right;
-     width: 150px;
+.main-box{
+    background-color:#353535;
+     width:200px;
+     height:400px;
+     border-radius: 15px;
+     margin-left: 40px;
+     margin-bottom: 40px;
 }
-input,select,option{
-     margin-left: 10px;
+input{
+    color:#989898;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color:#353535;
+    border-radius:15px ;
+    border:0;
+    text-indent: 25px;
+    height: 40px;
+    margin-left: 50px;
+    
+    
 }
-.buttons{
-    display: flex;
-    gap: 60px;
-    justify-content:flex-end
+.small-box{
+    height:100px;
+    width: 150px;
+    border-radius: 15px ;
+    background-color:#353535;
+    margin: 0 40px;
+   
+}
+.tent{
+    height:140px;
+    width: 620px;;
+    border-radius: 15px ;
+    background-color:#353535;
+    margin-left: 20px;
+    margin-top: 40px;
 }
     </style>
     
@@ -60,46 +82,34 @@ input,select,option{
 </head>
 
 <body>
-   <div class="container">
-       <div class="heading">
-           <p>Event 1</p>
-           <p>Numbers of available seats: 23</p>
-      </div>
-        <div class="body">
-           
-             <div class="body-content">
-             <div class="image">
-                <i class="fa fa-file-image-o fa-4x" aria-hidden="true"></i>
-             </div></div>
-             <div class="main">
-               <div>
-                <label for="name">Name</label>
-                <input type="text" name="" id="name"></br>
-                
-                <label for="Email">email</label>
-                <input type="email" name="" id="Email"></br>
-  
-                <label for="name">Phone no</label>
-                <input type="text" name="" id="name"></br>
-                
-               
-              <label for="seats">Number of seats</label>
-              <select name="" id="">
-                
-                <option value="2">2</option>
-              </select><br>
-
-              <label for="name">Number of attendance</label>
-              <input type="text" name="" id="name"></br>
+    <div class="cointainer">
+        <div class="heading-design d-flex align-items-center">
+             <i class="fa fa-github fa-3x" aria-hidden="true"></i> 
+            <div style="width:100%" class="d-flex justify-content-center"><b>GITHUB</b></div> 
+    </div>
+            <div class="row">
+               <div class="col-5 d-flex justify-content-start">
+                  <div class="main-box ">
+                        
+                  </div>
+               </div>
+               <div class="col-7">
+               <input type="text" style="width:500px" placeholder="search">
+               <div class="row">
+                  <div  class="small-box"></div>
+                  <div  class="small-box"></div>
+                  <div  class="small-box"></div>
+               </div>
+               <div class="tent">
+   
+               </div>
+            </div>
+            </div>
+               </div>
               
-              <div class=buttons><button type="submit">Button</button>
-              <button type="submit">cancel</button></div>
-               </div> 
-             </div>
-            
-       </div>
-       
- </div>
+   
+      </div>
+      <link rel="stylesheet" href="san.css">
 
 
 </body>
